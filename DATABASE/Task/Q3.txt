@@ -1,0 +1,82 @@
+1) CREATE DATABASE EmpDB;
+
+2) CREATE TABLE Employee 
+   (
+    Employee_id int auto_increment Primary Key,
+    First_name varchar(255),
+    Last_name varchar(255),
+    Salary int(100),
+    Joining_date varchar(255),
+    Department varchar(255)
+    );
+
+
+3) INSERT INTO 
+    Employee (First_name, Last_name, Salary, Joining_date, Department)
+    VALUES 
+    ('John', 'Abraham', '1000000', '01-JAN-13 12.00.00 AM', 'Banking'),
+    ('Michael', 'Clarke', '800000', '01-JAN-13 12.00.00 AM', 'Insurance'),
+    ('Roy', 'Thomas', '700000', '01-FEB-13 12.00.00 AM', 'Banking'),
+    ('Tom', 'Jose', '600000', '01-FEB-13 12.00.00 AM', 'Insurance'),
+    ('Jerry', 'Pinto', '650000', '01-FEB-13 12.00.00 AM', 'Insurance'),
+    ('Philip', 'Mathew', '750000', '01-JAN-13 12.00.00 AM', 'Services'),
+    ('TestName1', '123', '650000', '01-JAN-13 12.00.00 AM', 'Services'),
+    ('TestName2', 'Lname%', '600000', '01-FEB-13 12.00.00 AM', 'Insurance');
+    
+
+==========First Table End===========
+
+4) CREATE TABLE Incentive 
+   (
+    Employee_ref_id int,
+    Joining_date varchar(255),
+    Incentive_amount int(100),
+    FOREIGN KEY (Employee_ref_id) REFERENCES Employee(Employee_id)
+    );
+
+5) INSERT INTO 
+    Incentive (Employee_ref_id, Joining_date, Incentive_amount)
+    VALUES 
+    ('1', '01-FEB-13', '5000'),
+    ('2', '01-FEB-13', '3000'),
+    ('3', '01-FEB-13', '4000'),
+    ('1', '01-JAN-13', '4500'),
+    ('2', '01-JAN-13', '3500');
+
+
+==========First Table End===========
+
+A)  SELECT First_name FROM Employee
+   WHERE First_name='Tom';
+
+B) SELECT First_name, Joining_date, Salary FROM Employee 
+
+C) SELECT * FROM Employee
+   ORDER BY First_name ASC;
+ 
+   SELECT * FROM Employee
+   ORDER BY Salary DESC;
+
+	==or==
+   SELECT * FROM Employee
+   ORDER BY First_name ASC,Salary DESC;
+
+D) SELECT * from employee WHERE First_name LIKE '%J%';
+
+
+E) SELECT * FROM Employee
+   ORDER BY Department DESC,Salary ASC;
+
+F) SELECT First_name,Incentive_amount
+   FROM employee X INNER JOIN incentive Y 
+   ON X.Employee_id=Y.Employee_ref_id AND Incentive_amount >3000;
+
+G) DELIMITER $$
+   CREATE TRIGGER INSERT_trigger AFTER INSERT on employee FOR EACH ROW
+   BEGIN
+ 	INSERT INTO employee_new(First_name,action_performed)
+ 	VALUES (new.first_name,'Record inserted');
+   END
+   	    $$
+
+

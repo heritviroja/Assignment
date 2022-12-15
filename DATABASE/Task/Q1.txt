@@ -1,0 +1,37 @@
+1) CREATE DATABASE School;
+
+2) CREATE TABLE Student
+   (
+	Rollno int(10) AUTO_INCREMENT PRIMARY KEY,
+	Name varchar(255),
+	Branch varchar(255)
+   );
+
+3) INSERT INTO 
+   Student(Name,Branch)
+   VALUES
+   ('Jay','Computer Science'),
+   ('Suhani','Electronic and Com' ),
+   ('Kriti','Electronic and Com');
+
+
+========= First Table End==========
+
+4) CREATE TABLE Exam
+   (
+	Rollno int(10),
+	S_code varchar(255),
+	Marks int(10),
+	P_code varchar(255),
+	FOREIGN KEY(Rollno) REFERENCES Student(Rollno)
+   );
+
+5) INSERT INTO
+   Exam (Rollno, S_code, Marks, P_code)
+   VALUES
+   ('1', 'CS11', '50', 'CS'),
+   ('1', 'CS11', '60', 'CS'),
+   ('2', 'ES101', '66', 'EC'),
+   ('2', 'ES102', '70', 'EC'),
+   ('3', 'ES101', '45', 'EC'),
+   ('3', 'EC102', '50', 'EC');

@@ -1,0 +1,12 @@
+DBMS stands for Database Management System, and RDBMS is the acronym for the Relational Database Management system. In DBMS, the data is stored as a file, whereas in RDBMS, data is stored in the form of tables. 
+
+
+RDBMS												DBMS
+Data stored is in table format									Data stored is in the file format
+Multiple data elements are accessible together							Individual access of data elements
+Data in the form of a table are linked together							No connection between data
+Normalisation is not achievable									There is normalisation
+Data is stored in a large amount								Data stored is a small quantity
+RDBMS supports multiple users									DBMS supports a single user
+
+

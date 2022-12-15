@@ -1,0 +1,1 @@
+A trigger is a special type of stored procedure that automatically runs when an event occurs in the database server.The CREATE TRIGGER statement allows you to create a new trigger that is fired automatically whenever an event such as INSERT, DELETE, or UPDATE occurs against a table.

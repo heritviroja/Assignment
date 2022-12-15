@@ -1,0 +1,1 @@
+Redundancy means having multiple copies of same data in the database.

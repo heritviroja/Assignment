@@ -1,0 +1,67 @@
+1) CREATE DATABASE website;
+
+2) CREATE TABLE SALESPERSON
+   (
+    Sno int(100) PRIMARY KEY,
+    SNAME varchar(255),
+    CITY varchar(255),
+    COMM varchar(50)
+   ); 
+
+3) INSERT into 
+   SALESPERSON (Sno,SNAME,CITY,COMM)
+   VALUES
+   ('1001','Peel','London','.12'),
+   ('1002','Serres','San Jose','.13'),
+   ('1004','Motika','London','.11'),
+   ('1007','Rafkin','Barcelona','.15'),
+   ('1003','Axelrod','New York','.10');
+
+======= First table End=========
+
+4) CREATE TABLE CUSTOMER
+   (
+    CNM int(10) PRIMARY KEY,
+    CNAME varchar(255),
+    CITY varchar(255),
+    RATING int(10),
+    SNo int(10),
+    FOREIGN KEY (SNo) REFERENCES SALESPERSON(Sno)
+   );
+
+5) INSERT into 
+   CUSTOMER (CNM,CNAME,CITY,RATING,SNo)
+   VALUES
+   ('201','Hoffman','London','100','1001'),
+   ('202','Giovanne','Rome','200','1003'),
+   ('203','Liu','San Jose','300','1002'),
+   ('204','Grass','Barcelona','100','1002'),
+   ('206','Clemens','London','300','1007'),
+   ('207','Pereira','Rome','100','1004');
+
+========Second table End=========
+
+
+A)
+
+
+B) SELECT SNAME,CITY,COMM 
+   FROM SALESPERSON
+   WHERE COMM > 0.12;
+
+
+C) SELECT SNAME, CITY
+   FROM SALESPERSON
+   WHERE CITY = 'Barcelona' OR CITY = 'London';
+
+D) SELECT SNAME, CITY,COMM
+   FROM SALESPERSON
+   WHERE COMM >0.10 AND COMM <0.12;
+
+E) SELECT * FROM Customers
+   WHERE CITY='Rome' AND RATING > 100;
+
+
+
+
+
