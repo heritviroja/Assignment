@@ -2,7 +2,7 @@
 Write a program of to swap the two values using templates.
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 template<class swap>
