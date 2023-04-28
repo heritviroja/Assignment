@@ -1,0 +1,7 @@
+The C++ programming language is categorized as a partial object-oriented programming language.
+List of Concepts
+
+1.inheritance
+2.encapsulation
+3.abstraction
+4.polymorphism

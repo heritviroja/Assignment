@@ -1,0 +1,19 @@
+Structure Programe
+
+struct employee  
+{  
+    int id;  
+    char name[50];  
+    string department;  
+    string email;  
+};  
+
+Union Programe
+
+union employee  
+{  
+    string name;  
+    string department;  
+    int phone;  
+    string email;  
+};  
