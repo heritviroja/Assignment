@@ -1,0 +1,49 @@
+Q-1- What is software? What is software engineering?
+Ans- Software is a set of instructions, data or programs used to operate computers and execute specific tasks.
+Software engineering is a detailed study of engineering to the design, development and maintenance of software.
+
+Q-2- Explain types of software
+Ans-  
+ 1. Application Software
+This is the most common type of computer software, and can be defined as end-user programs that help you perform tasks or achieve a desired outcome. The end-user is the person who is actually using a product or program. 2. System Software
+System software helps the user, the computer or mobile device, and an application all work together seamlessly. This makes system software crucial to running any kind of application software as well as the whole computer system. 3. Programming Software
+Programming-Software While application software is designed for end-users, and system software is designed for computers or mobile devices, programming software is for computer programmers and developers who are writing code. 4. Driver Software
+This software is often considered to be a type of system software. Driver software operates and controls devices that are plugged into a computer. These drivers make it possible for devices to perform their necessary functions.
+
+Q-3- What is SDLC? Explain each phase of SDLC
+Ans-
+The Software Development Life Cycle (SDLC) is a process used by software development organizations to plan, design, develop, test, deploy, and maintain software applications.
+
+    Phase of SDLC
+        1. Requirements gathering and analysis: This phase involves gathering information about the software requirements from stakeholders, such as customers, end-users, and business analysts.
+        2. Design: In this phase, the software design is created, which includes the overall architecture of the software, data structures, and interfaces. It has two steps:
+            High-level design (HLD): It gives the architecture of software products.
+            Low-level design (LLD): It describes how each and every feature in the product should work and every component.
+        3. Implementation or coding: The design is then implemented in code, usually in several iterations, and this phase is also called as Development.
+            things you need to know about this phase:
+                This is the longest phase in SDLC model.
+                This phase consists of Front end + Middleware + Back-end.
+                In front-end: Development of coding is done even SEO settings are done.
+                In Middleware: They connect both the front end and back end.
+                In the back-end: A database is created.
+        4. Testing: The software is thoroughly tested to ensure that it meets the requirements and works correctly.
+        5. Deployment: After successful testing, The software is deployed to a production environment and made available to end-users.
+        6. Maintenance: This phase includes ongoing support, bug fixes, and updates to the software.
+
+Q-4- What is DFD? Create a DFD diagram on Flipkart!
+Ans-
+DFD is the abbreviation for Data Flow Diagram. The flow of data of a system or a process is represented by DFD. It also gives insight into the inputs and outputs of each entity and the process itself. DFD does not have control flow and no loops or decision rules are present. Specific operations depending on the type of data can be explained by a flowchart.
+
+    DFD of Flipkart in folder
+
+Q-5- What is Flow chart? Create a flowchart to make addition of two numbers
+Ans-
+A flowchart is a picture of the separate steps of a process in sequential order. It is a generic tool that can be adapted for a wide variety of purposes, and can be used to describe various processes, such as a manufacturing process, an administrative or service process, or a project plan.
+
+    Flowchart to Add two numbers in folder
+
+Q-6- What is Use case Diagram? Create a use-case on bill payment on paytm.
+Ans-
+Use-case diagrams describe the high-level functions and scope of a system. These diagrams also identify the interactions between the system and its actors. The use cases and actors in use-case diagrams describe what the system does and how the actors use it, but not how the system operates internally.
+
+    Use case diagram of payment on paytm in folder

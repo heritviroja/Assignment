@@ -1,0 +1,254 @@
+Q-1- Define the terms: Website, Webpage, Web browser, Web server, HTML,CSS
+
+Ans-
+    A website is a collection of web pages and related content that is identified by a common domain name and published on at least one web server. Websites are typically dedicated to a particular topic or purpose, such as news, education, commerce, entertainment or social networking.
+    
+    A web page is a hypertext document on the World Wide Web. Web pages are delivered by a web server to the user and displayed in a web browser.
+
+    A web browser is an application for accessing websites. When a user requests a web page from a particular website, the browser retrieves its files from a web server and then displays the page on the user's screen.
+
+    A web server is computer software and underlying hardware that accepts requests via HTTP or its secure variant HTTPS.
+
+    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser
+
+    Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript
+
+Q-2- Create a webpage to show “This is my first HTML page”
+Ans- 
+    <html>
+        <head>
+            <title>First Html Page</title>
+        </head>
+    <body>
+        This is my First Html Page !!
+    </body>
+    </html>
+
+Q-3- Display top 10 IT companies list in html webpage
+Ans-
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+    <h1> Top 10 IT Companies </h1>
+    <ol>
+        <li> Konstant Infosolutions </li>
+        <li> Dot Com Infoway </li>
+        <li> SemiDot InfoTech </li>
+        <li> Dom & Tom </li>
+        <li> Y Media Labs </li>
+        <li> WillowTree </li>
+        <li>  Fueled </li>
+        <li>  Intellectsoft </li>
+        <li> Big Drop Inc </li>
+        <li>  Eleks </li>
+    </ol>
+    </body>
+    </html>
+
+Q-4- Create a dropdown list 
+Ans- 
+
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+    <select>
+    <option value="">option1</option>
+    <option value="">option2</option>
+    <option value="">option3</option>
+    <option value="">option3</option>
+    </select>
+    </body>
+    </html>
+Q-5- Create a Table Of college Management system using row span & col span.
+Ans-
+
+
+Q-6- Create below table using HTML table tags 
+Ans-
+
+Q-7- Create Registration form using HTML, CSS
+Ans-
+    
+        <Html>  
+        <head>   
+        <title>  
+        Registration Page  
+        </title>  
+        </head>  
+        <body bgcolor="Lightskyblue">  
+        <br>  
+        <br>  
+        <form>  
+        
+        <label> Firstname </label>         
+        <input type="text" name="firstname" size="15"/> <br> <br>  
+        <label> Middlename: </label>     
+        <input type="text" name="middlename" size="15"/> <br> <br>  
+        <label> Lastname: </label>         
+        <input type="text" name="lastname" size="15"/> <br> <br>  
+        
+        <label>   
+        Course :  
+        </label>   
+        <select>  
+        <option value="Course">Course</option>  
+        <option value="BCA">BCA</option>  
+        <option value="BBA">BBA</option>  
+        <option value="B.Tech">B.Tech</option>  
+        <option value="MBA">MBA</option>  
+        <option value="MCA">MCA</option>  
+        <option value="M.Tech">M.Tech</option>  
+        </select>  
+        
+        <br>  
+        <br>  
+        <label>   
+        Gender :  
+        </label><br>  
+        <input type="radio" name="male"/> Male <br>  
+        <input type="radio" name="female"/> Female <br>  
+        <input type="radio" name="other"/> Other  
+        <br>  
+        <br>  
+        
+        <label>   
+        Phone :  
+        </label>  
+        <input type="text" name="country code"  value="+91" size="2"/>   
+        <input type="text" name="phone" size="10"/> <br> <br>  
+        Address  
+        <br>  
+        <textarea cols="80" rows="5" value="address">  
+        </textarea>  
+        <br> <br>  
+        Email:  
+        <input type="email" id="email" name="email"/> <br>    
+        <br> <br>  
+        Password:  
+        <input type="Password" id="pass" name="pass"> <br>   
+        <br> <br>  
+        Re-type password:  
+        <input type="Password" id="repass" name="repass"> <br> <br>  
+        <input type="button" value="Submit"/>  
+        </form>  
+        </body>  
+        </html>  
+
+Q-8- In how many ways can a CSS be integrated as a web page?
+Ans-
+    CSS can be added to HTML documents in 3 ways: 
+    Inline - by using the style attribute inside HTML elements. 
+    Internal - by using a <style> element in the <head> section. 
+    External - by using a <link> element to link to an external CSS file.
+
+Q-9- Create simple three pages using External CSS, Internal CSS, and Inline CSS. 
+Ans-
+
+Q-10- Create below page using HTML CSS 
+Ans-
+
+Q-11- Create link-pseudo classes using external css, to format links on the pages.
+Ans-
+
+Q-12- Create a dynamic pseudo class using HTML, CSS 
+Ans- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS dynamic pseudo-classes</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            
+            h1, h2 {
+                font-family: cursive;
+            }
+            
+            a:link {
+                color: red;
+            }
+            a:visited {
+                color: orange;
+            }
+            a:hover { 
+                background-color: rgb(255, 214, 255);
+            }  
+            a:active {
+                background-color: rgb(255, 214, 255);
+            } 
+            a:focus {
+                background-color: rgb(255, 214, 255);
+            } 
+        </style>
+    </head>
+    <body>
+    
+        <h1>Famous paintings</h1>
+        
+        <p>You can learn more about these famous paintings on <a href="#">XYZ Painting</a>.</p>
+        
+        
+        <h2>Oil</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    Nature
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Blur
+                </a>
+            </li>
+            <li>
+                <a href="#">Food</a>
+            </li>
+        </ul>
+        
+        <h2>Vector</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    Product
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Advertise
+                </a>
+            </li>
+        </ul>
+        
+        <h2>Abstract</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    web
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    wedding
+                </a>
+            </li>
+        </ul>
+        
+        
+
+    </body>
+</html>
+
