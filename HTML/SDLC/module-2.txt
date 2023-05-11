@@ -73,10 +73,193 @@ Ans-
     </html>
 Q-5- Create a Table Of college Management system using row span & col span.
 Ans-
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Management System Table </title>
+    <style>
+        table,tr,th,td
+        {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+    <body>
+        <h1> College Management System Table </h1>
+        <table>
+            <tr>
+                <th rowspan="3"> Day </th>
+                <th colspan="3"> Seminar </th>
+            </tr>
+
+            <tr>
+                <th colspan="2"> Sechedule </th>
+                <th rowspan="2"> Topic </th>
+            </tr>
+
+            <tr>
+                <th> Begin </th>
+                <th> End </th>
+            </tr>
+
+            <tr>
+                <td rowspan="2"> Monday </td>
+                <td rowspan="2"> 8:00 A.M. </td>
+                <td rowspan="2"> 5:00 A.M. </td>
+                <td> Introduction to XML </td>
+            </tr>
+
+            <tr>
+                <td> Validity : DTD and Relax NG </td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"> Wednesday </td>
+                <td> 8:00 A.M. </td>
+                <td> 11:00 A.M. </td>
+                <td> X Path </td>
+            </tr>
+
+            <tr>
+                <td> 11:00 A.M. </td>
+                <td> 2:00 A.M. </td>
+                <td> Introduction to XSL </td>
+            </tr>
+
+            <tr>
+                <td> 2:00 P.M. </td>
+                <td> 5:00 P.M. </td>
+                <td> XSL Transformations </td>
+            </tr>
+
+            <tr>
+                <td> Friday </td>
+                <td> 8:00 A.M. </td>
+                <td> 12:00 A.M. </td>
+                <td> XSL Formatting Objects </td>
+            </tr>
+        </table>
+    
+    </body>
+</html>
 
 
 Q-6- Create below table using HTML table tags 
 Ans-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Roulette</title>
+    <style>
+        html
+        {
+             background-color: rgb(89, 231, 89); 
+        
+        }
+        .roulette
+        {
+            margin-left: 220px;
+            
+        }
+        table,tr,td
+        {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 15px;
+        }
+        .red
+        {
+            color: white;
+            background-color: rgb(238, 30, 30);
+        }
+        .black
+        {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+    <body>
+        <h1 class="roulette"> European Roulette </h1>
+        <table>
+            <tr>
+                <td rowspan="5">0</td>
+                <td class="red">3</td>
+                <td class="black">6</td>
+                <td class="red">9</td>
+                <td class="red">12</td>
+                <td class="black">15</td>
+                <td class="red">18</td>
+                <td class="red">21</td>
+                <td class="black">24</td>
+                <td class="red">27</td>
+                <td class="red">30</td>
+                <td class="black">33</td>
+                <td class="red">36</td>
+                <td> 2 to 1 </td>
+            </tr>
+
+            <tr>
+                <td class="black">2</td>
+                <td class="red">5</td>
+                <td class="black">8</td>
+                <td class="black">11</td>
+                <td class="red">14</td>
+                <td class="black">17</td>
+                <td class="black">20</td>
+                <td class="red">23</td>
+                <td class="black">26</td>
+                <td class="black">29</td>
+                <td class="red">32</td>
+                <td class="black">35</td>
+                <td> 2 to 1 </td>
+            </tr>
+
+            <tr>
+                <td class="red">1</td>
+                <td class="black">4</td>
+                <td class="red">7</td>
+                <td class="black">10</td>
+                <td class="black">13</td>
+                <td class="red">16</td>
+                <td class="red">19</td>
+                <td class="black">22</td>
+                <td class="red">25</td>
+                <td class="black">28</td>
+                <td class="black">31</td>
+                <td class="red">34</td>
+                <td> 2 to 1 </td>
+            </tr>
+
+            <tr>
+                <td colspan="4"> 1st 12 </td>
+                <td colspan="4"> 2nd 12 </td>
+                <td colspan="4"> 3rd 12 </td>
+                <td rowspan="2"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> 1 to  18 </td>
+                <td colspan="2"> EVEN </td>
+                <td colspan="2" class="red"></td>
+                <td colspan="2" class="black"></td>
+                <td colspan="2"> ODD </td>
+                <td colspan="2"> 19 to 36 </td>
+            </tr>
+        </table>
+    </body>
+</html>
 
 Q-7- Create Registration form using HTML, CSS
 Ans-
@@ -156,11 +339,652 @@ Ans-
 Q-9- Create simple three pages using External CSS, Internal CSS, and Inline CSS. 
 Ans-
 
+Internal CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrnal CSS</title>
+    <style>
+        html
+        {
+            background-repeat: no-repeat;
+            background-color: rgb(209,162,98);
+        }
+        .banner
+        {
+            background-color:saddlebrown;
+        }
+        .navbar
+        {
+            text-align: left;
+        }
+        .copyright
+        {
+            color:green;
+        }
+    </style>
+</head>
+    <body>
+        <div class="banner">
+            <h1 class="h1"> THIS IS MY BANNER TEXT </h1>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#"> HOME </a></li>
+                <li><a href="#"> INFO </a></li>
+                <li><a href="#"> CONTACT </a></li>
+            </ul>
+        </div>
+
+        <h2>This Is My Paragraph Header</h2>
+        <p> This is where I am going to put useful and informative text about my website. </p>
+
+        <p> This is where I am can place even more information about my website. </p>
+    
+        <div class="copyright">This is where I can place a copyright logo like this &copy;</div>
+    </body>
+</html>
+
+
+External CSS
+            HTML 
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title> External CSS </title>
+                        <link rel="stylesheet" href="externalcss.css">
+                    </head>
+                        <body>
+                            <h1 class="h1"> K.G.F: Chapter 2 </h1><hr><br>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/K.G.F_Chapter_2.jpg/220px-K.G.F_Chapter_2.jpg" alt="Theatrical release poster" class="pic"><br><br>
+
+                            <p class="p1"><a href="https://en.wikipedia.org/wiki/K.G.F:_Chapter_2"> K.G.F: Chapter 2</a> is a 2022 Indian Kannada-language period action film written and directed by Prashanth Neel, and produced by Vijay Kiragandur under the banner Hombale Films. The second instalment in a two-part series, it serves as a sequel to the 2018 film K.G.F: Chapter 1. The film stars <a href="https://en.wikipedia.org/wiki/Yash_(actor)">Yash,</a><a href="https://en.wikipedia.org/wiki/Sanjay_Dutt"> Sanjay Dutt,</a><a href="https://en.wikipedia.org/wiki/Raveena_Tandon"> Raveena Tandon,</a><a href="https://en.wikipedia.org/wiki/Srinidhi_Shetty"> Srinidhi Shetty</a><a href="https://en.wikipedia.org/wiki/Prakash_Raj"> and Prakash Raj.</a> t follows the assassin Rocky, who after establishing himself as the kingpin of the Kolar Gold Fields, must retain his supremacy over adversaries and government officials, while also coming to terms with his past.</p>
+
+                            <p class="p2">Produced on a budget of ₹100 crore, K.G.F: Chapter 2 is the most expensive Kannada film ever made. Neel retained the technicians from its predecessor with Bhuvan Gowda handling the cinematography and Ravi Basrur composed the film score and songs. Dutt and Tandon joined the cast in early 2019, marking the former's Kannada film debut. Portions of the film were shot back-to-back with <a href="https://en.wikipedia.org/wiki/K.G.F:_Chapter_1"> Chapter 1.</a> Principal photography for the rest of the sequences commenced in March 2019, but was halted in February 2020 owing to the COVID-19 lockdown in India. Filming resumed five months later and was completed in December 2020. Locations included Bangalore, Hyderabad, Mysore and Kolar.</p>
+
+                            <p class="p3">K.G.F: Chapter 2 was theatrically released in India on 14 April 2022 in Kannada, along with dubbed versions in Hindi, Telugu, Tamil and Malayalam languages. It is also the first Kannada film to release in IMAX. The film received mixed reviews from critics. Neel's direction, the action sequences, cinematography and performances (particularly Yash) received praise, but the pace and writing attracted criticism. Besides this, it recorded the second highest-opening day in India, the film set domestic opening day records in Kannada, Hindi and Malayalam, and surpassed the lifetime gross of its predecessor in two days to become the highest-grossing Kannada film. With earnings of ₹1,233-1,250 globally, K.G.F: Chapter 2 is the <a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films">third highest-grossing Indian film of all time,</a> and the <a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_films_in_India">second highest-grossing film in India.</a> A sequel is in development.</p>
+                        </body>
+                    </html>
+
+
+            css
+
+                    html
+                    {
+                        background-color: rgb(243, 216, 61);
+                        background-repeat: no-repeat;
+                        height: auto;
+                    }
+
+                    a
+                    {
+                        text-decoration: none;
+                        background-color: red;
+                        color: white;
+                    }
+
+                    .h1
+                    {
+                        background-color: black;
+                        color: white;
+                        text-align: center;
+                    }
+
+                    .pic
+                    {
+                        margin-left: 550px;
+                        border: 4px solid white;
+                    }
+
+                    .p1
+                    {
+                        background-color: #2A9C9D;
+                        color: black;
+                    }
+
+                    .p2
+                    {
+                        background-color: #FFFDC4;
+                        color: black;
+                    }
+
+                    .p3
+                    {
+                        background-color: #F98441;
+                        color: black;
+                    }
+
+Inline CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> INLINE CSS </title>
+</head>
+    <body>
+        <h1 style="background: linear-gradient(#FF9933,white,green); color: rgb(17, 17, 17); text-align: center;"> Vallabhbhai Patel </h1><hr>
+
+        <p style="margin-left: 550px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Sardar_patel_%28cropped%29.jpg/220px-Sardar_patel_%28cropped%29.jpg" alt="image of sardar patel" width="250" style="border: 3px solid black;"></p><br>
+
+        <p style="background-color: #FF9933; color: black;">Vallabhbhai Jhaverbhai Patel ; (31 October 1875 - 15 December 1950), endeared as Sardar, was an Indian lawyer, influential political leader and statesman who served as the first Deputy Prime Minister of India from 1947 to 1950. He is also called the <span style="color: white; padding: 2px;"><a href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel" style="text-decoration: none; color: white;"> "Unifier of India" </a></span>.<span style="color: white; padding: 2px;"><a href="https://en.wikipedia.org/wiki/Statue_of_Unity" style="text-decoration: none; color: white;"> "The Statue of Unity" </a></span>, the ruling BJP government erected world's tallest statue at a cost of USD420 million, was dedicated to him on 31 October 2018 and is approximately 182 metres (597 ft) in height. He was a barrister and a senior leader of the Indian National Congress, who played a leading role in the country's struggle for independence, guiding its integration into a united, independent nation. He was one of the conservative members of the Indian National Congress. In India and elsewhere, he was often called Sardar, meaning "chief" in Hindi, Urdu, and Persian. He acted as the Home Minister during the political integration of India and the Indo-Pakistani War of 1947.</p>
+
+        <p style="background-color: white; color:black">Patel was born in Nadiad, Kheda district, and raised in the countryside of the state of Gujarat. He was a successful lawyer. One of Mahatma Gandhi's earliest political lieutenants, he organised peasants from Kheda, Borsad, and Bardoli in Gujarat in non-violent civil disobedience against the British Raj, becoming one of the most influential leaders in Gujarat. He was appointed as the 49th President of Indian National Congress, organising the party for elections in 1934 and 1937 while promoting the Quit India Movement.</p>
+            
+        <p style="background-color: green; color: black;">As the first Home Minister and Deputy Prime Minister of India, Patel organised relief efforts for partition refugees fleeing to Punjab and Delhi from Pakistan and worked to restore peace. He led the task of forging a united India, successfully integrating into the newly independent nation those British colonial provinces that formed the Dominion of India. Besides those provinces that had been under direct British rule, approximately 565 self-governing princely states had been released from British suzerainty by the Indian Independence Act of 1947. Patel persuaded almost every princely state to accede to India. His commitment to national integration in the newly independent country was total and uncompromising, earning him the sobriquet <span style="color: white; padding: 2px;"><a href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel" style="text-decoration: none; color: white;"> "Iron Man of India" </a></span>. He is also remembered as the "patron saint of India's civil servants" for having established the modern All India Services system.</p>
+    </body>
+</html>
+
 Q-10- Create below page using HTML CSS 
 Ans-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Individual Registration </title>
+    <style>
+        html
+        {
+            background-color: rgb(169,243,243);
+        }
+        .h1
+        {
+            background: linear-gradient(rgb(138, 206, 226),rgb(147, 182, 214),rgb(92, 106, 153));
+            color: red;
+            text-align: center;
+        }
+        .h4
+        {
+            color: red;
+        }
+        .star
+        {
+            color: red;
+        }
+        .submit
+        {
+            background-color: rgb(27, 27, 197);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 600px;
+        }
+        .reset
+        {
+            background-color: rgb(27, 27, 197);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            text-align: center;
+            padding: 5px;   
+        }
+
+        .div1
+        {
+            margin-left: 500px;
+            margin-bottom: 5px;
+        }
+        .div2
+        {
+            margin-left: 498px;
+            margin-bottom: 5px;
+        }
+        .div3
+        {
+            margin-left: 439px;
+            margin-bottom: 5px;
+        }
+        .div4
+        {
+            margin-left: 300px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div5
+        {
+            margin-left: 300px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div6
+        {
+            margin-left: 280px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div7
+        {
+            margin-left: 230px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div8
+        {
+            margin-left: 270px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div9
+        {
+            margin-left: 313px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div10
+        {
+            margin-left: 307px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div11
+        {
+            margin-left: 196px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div12
+        {
+            margin-left: 230px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div13
+        {
+            margin-left: 228px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .div14
+        {
+            margin-left: 278px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+    <body>
+        <form>
+            <h1 class="h1"> Individual Registration </h1>
+
+            <h4 class="h4"> User Particulars </h4>
+            <div class="div1"><label for="loginid"> <span class="star">*</span>Login ID</label>
+            <input type="text" required></div>
+
+            <div class="div2"><label for="password"> <span class="star">*</span>Password</label>
+            <input type="password" required></div>
+
+            <div class="div3"><label for="confirmpassword"><span class="star">*</span>Confirm Password</label>
+            <input type="password" required></div>
+            <br><br>
+
+
+            <h4 class="h4"> personal Particulars </h4>
+            <div class="div4"><label for="salutation"><span class="star">*</span> Salutation</label>
+                <select name="salutation" id="salutation">
+                    <option value="select">--Select--</option>
+                    <option value="best regards">Best Regards</option>
+                    <option value="respectfully">Respectfully</option>
+                    <option value="bestwishes">Best Wishes</option>
+                </select></div>
+
+            <div class="div5"><label for="fname"> <span class="star">*</span>First Name</label>
+                    <input type="text" required></div>
+
+            <div class="div6"><label for="mname"><span class="star">*</span>Middle Name</label>
+            <input type="text"></div>
+
+            <div class="div7"><label for="lname"><span class="star">*</span>Last Name</label>
+            <input type="text" required></div>
+
+            <div class="div8"><label for="status"><span class="star">*</span>Resident Status</label>
+                <select name="Resident Status" id="Resident Status" required>
+                <option value="select">--Select--</option>
+                <option value="resident">Resident</option>
+                <option value="non-resident">Non-Resident</option></select></div>
+
+            <div class="div9"><label for="country"><span class="star">*</span> Country</label>
+                <select name="country" id="country" required>
+                    <option value="select">--Select--</option>
+                    <option value="india">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>                       
+                    <option value="germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                </select></div>
+
+            <div class="div10"><label for="email"><span class="star">*</span>EMail-ID</label>
+            <input type="email"required></div>
+    
+            <div class="div11"><label for="contact"><span class="star">*</span>Mobile Number</label>
+            <input type="number" required></div>
+        
+            <h4 class="h4">Account Particulars</h4>
+            <div class="div12"><label for="account no"><span class="star">*</span>15 Digit Account No.</label>
+            <input type="text" min="0" max="15" required></div>
+
+            <div class="div13"><label for="nickname"><span class="star">*</span>Nick Name</span></label>
+                <input type="text" required></div>
+
+            <div class="div14"><label for="fundtransfer"><span class="star">*</span>Fund Transfer</label>
+            <select name="fundtransfer" id="fundtransfer">
+                <option value="select">--Select--</option>
+                <option value="5000">5000</option>
+                <option value="10000">10000</option>
+                <option value="25000">25000</option>
+                <option value="50000">50000</option>
+            </select></div>
+            
+            
+            
+            <h4 class="h4">DECLARATION</h4>
+                <p><input type="checkbox" required> I have read, understand and hereby agree to the terms and conditions in respect of all products and channels.</p>
+                <p>I understandand that any changes in the terms and conditions applicable to this relationship would be made avaliable to me on request at any IOB branches. I confirm that all accounts under this login name are operated singly and in case of joint account operated by either or survivor/anyone or survivor(s) under his/her joint name respectively. I do hereby declare that information furnished in this form is true to the best of my knowledge and belief.</p>
+
+            <button class="submit"> Submit </button>
+            <button class="reset"> Reset </button>
+                
+        </form>
+    </body>
+</html>
 
 Q-11- Create link-pseudo classes using external css, to format links on the pages.
 Ans-
+
+HTML
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Pseudo Classes Format links </title>
+            <link rel="stylesheet" href="pseudo class.css">
+        </head>
+
+        <body>
+                <button class="facebook-button"><a href="https://www.facebook.com/" target="_blank"><img src="https://thumbs.dreamstime.com/b/facebook-logo-icon-voronezh-russia-november-square-blue-color-164585769.jpg" alt="icon of facebook" width="20x"> Log in with Facebook </a></button><br>
+
+                <button class="twitter-button"><a href="https://twitter.com/i/flow/login" target="_blank"><img src="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg" alt="icon of twitter" width="20px"> Log in with Twitter </a></button><br>
+
+                <button class="google-button"><a href="https://accounts.google.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Google_Plus_logo_%282015-2019%29.svg/800px-Google_Plus_logo_%282015-2019%29.svg.png" alt="icon of google" width="20px"> Log in with Google </a></button><br>
+
+                <button class="linkedin-button"><a href="https://www.linkedin.com/login" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" alt="icon of linkedin" width="20px"> Log in with Linkedin </a></button><br>
+
+                <button class="yahoo-button"><a href="https://login.yahoo.com/" target="_blank"><img src="https://searchengineland.com/wp-content/seloads/2014/08/yahoo-y-logo1-1920.jpg" alt="icon of yahoo" width="30px"> Log in with Yahoo </a></button><br>
+
+                <button class="instagram-button"><a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="icon of instagram" width="20px"> Log in with Instagram </a></button><br>
+
+                <button class="pinterest-button"><a href="https://in.pinterest.com/login/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="icon of pinterest" width="20px"> Log in with Pinterest </a></button><br>
+
+                <button class="amazon-button"><a href="https://www.amazon.in/your-account" target="_blank"><img src="https://3.bp.blogspot.com/-WiRcMnvbSYA/XFmKhavuiAI/AAAAAAAAHqo/w6iRalrC2XoCzCra3HF8NAWijme0nFjPQCK4BGAYYCw/s1600/Amazon%2BLogo.png" alt="icon of amazon" width="20px"> Log in with Amazon </a></button><br>
+
+                <button class="tumblr-button"><a href="https://www.tumblr.com/login/follow/headcanonrising" target="_blank"><img src="https://cdn.logojoy.com/wp-content/uploads/20220329171716/tumblr-social-media-app-logo.png" alt="icon of tumblr"  width="20px"> Log in with Tumblr </a></button><br>
+
+                <button class="vkontake-button"><a href="https://vk.com/?lang=en" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/1200px-VK.com-logo.svg.png" alt="icon of Vkontakte" width="20px"> Log in with Vkontakte </a></button><br>
+        
+        </body>
+        </html>
+
+CSS
+
+        html
+        {
+            background-color:khaki;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+        .facebook-button
+        {
+            background-color: rgb(43, 0, 199);
+            color: black;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+            /* display: inline-block;
+            text-decoration: none;
+            text-align: center; */
+        }
+        .facebook-button:hover
+        {
+            background-color:black;
+            color:  rgb(55, 0, 255);
+            /* border: 1px solid  rgb(55, 0, 255); */
+        }
+        .facebook-button:active
+        {
+            /* color: grey; */
+            transform:scale(0.95);
+        }
+        /* .facebook-button:visited
+        {
+            color: pink;
+        } */
+
+
+        .twitter-button
+        {
+            background-color: rgb(65, 193, 231);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .twitter-button:hover
+        {
+            background-color: black;
+            color:  rgb(65, 193, 231);
+        }
+        .twitter-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .google-button
+        {
+            background-color: rgb(228, 37, 37);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .google-button:hover
+        {
+            background-color: black;
+            color:  rgb(228, 37, 37);
+        }
+        .google-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .linkedin-button
+        {
+            background-color: rgb(60, 101, 236);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .linkedin-button:hover
+        {
+            background-color: black;
+        }
+        .linkedin-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .yahoo-button
+        {
+            background-color: rgb(90, 16, 133);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .yahoo-button:hover
+        {
+            background-color: black;
+        }
+        .yahoo-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .instagram-button
+        {
+            background-color: rgb(116, 114, 30);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .instagram-button:hover
+        {
+            background-color: black;
+        }
+        .instagram-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .pinterest-button
+        {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .pinterest-button:hover
+        {
+            background-color: black;
+        }
+        .pinterest-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .amazon-button
+        {
+            background-color: rgb(255, 123, 0);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .amazon-button:hover
+        {
+            background-color: black;
+        }
+        .amazon-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .tumblr-button
+        {
+            background-color: rgb(4, 0, 255);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .tumblr-button:hover
+        {
+            background-color: black;
+        }
+        .tumblr-button:active
+        {
+            transform: scale(0.95);
+        }
+
+
+
+        .vkontake-button
+        {
+            background-color: rgb(30, 67, 168);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color, color 0.5s;
+        }
+        .vkontake-button:hover
+        {
+            background-color: black;
+        }
+        .vkontake-button:active
+        {
+            transform: scale(0.95);
+        }
 
 Q-12- Create a dynamic pseudo class using HTML, CSS 
 Ans- 
@@ -246,9 +1070,6 @@ Ans-
                 </a>
             </li>
         </ul>
-        
-        
 
     </body>
 </html>
-
